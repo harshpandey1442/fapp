@@ -1,0 +1,24 @@
+.foods{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #bdbdbd;
+}
+.card-wrapper {
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    height: 52vh;
+    background-color: #e3e3e3;
+    overflow-y: scroll;
+
+}
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .foods {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
