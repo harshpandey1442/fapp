@@ -1,16 +1,9 @@
 .card{
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 1px 8px rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 10px 15px rgb(0 0 0 / 50%);
     background-color: white;
     margin-bottom: 10px;
     display: block;
     text-align: left;
 }
-/* .card-wrapper{
-    display: block;
-    height: 50vh;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-y: scroll;
-} */
