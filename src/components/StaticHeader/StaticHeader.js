@@ -33,7 +33,7 @@ function StaticHeader(props) {
 
         </div>
 
-      <div>
+      
         <a href="#/cart">
           {/* style={WRAPPER_STYLE} */}
           <div className="outer-cart" style={WRAPPER_STYLE}>
@@ -65,7 +65,7 @@ function StaticHeader(props) {
           </div>
           
         </a>{" "}
-      </div>
+      
 
       <MyCartModal open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="list">Order Receipt</div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../UI/Card/Card";
 import data from "../../data";
 import "./FoodItem.css";
+// import CartItems from "../Cart/CartItems";
 
 function FoodItem(props) {
   const { product, onAdd, setQuantity } = props;
@@ -10,9 +11,12 @@ function FoodItem(props) {
 
   const handleQuantityClick = (event) => {
     console.log("Data->", data);
-    setFoodQuantity(event.target.value);
+    setFoodQuantity(event);
     setQuantity(product.id, event.target.value);
+  
   };
+  console.log(foodQuantity)
+  // props.product(foodQuantity)
 
   return (
     <Card>
@@ -41,7 +45,7 @@ function FoodItem(props) {
               min="1"
               max="5"
               value={foodQuantity}
-              onChange={handleQuantityClick}
+              onChange={e =>handleQuantityClick(e.target.value) }
             />
             
           </div>
